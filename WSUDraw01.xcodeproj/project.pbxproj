@@ -18,7 +18,7 @@
 		972899AA27078409006B6D26 /* WSUCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972899A927078409006B6D26 /* WSUCustomView.swift */; };
 		9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */; };
 		9777BE15273C74750042BA58 /* BearTrap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9777BE14273C74750042BA58 /* BearTrap.jpg */; };
-		97E90CE32710BCA30073094D /* puppies-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E90CE22710BCA30073094D /* puppies-cover.jpg */; };
+		9777BE17273C7DEB0042BA58 /* Hole.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9777BE16273C7DEB0042BA58 /* Hole.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		972899A927078409006B6D26 /* WSUCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSUCustomView.swift; sourceTree = "<group>"; };
 		9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TreasureChest.jpg; sourceTree = "<group>"; };
 		9777BE14273C74750042BA58 /* BearTrap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BearTrap.jpg; sourceTree = "<group>"; };
-		97E90CE22710BCA30073094D /* puppies-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppies-cover.jpg"; sourceTree = "<group>"; };
+		9777BE16273C7DEB0042BA58 /* Hole.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hole.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 		972899A8270783F2006B6D26 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				97E90CE22710BCA30073094D /* puppies-cover.jpg */,
 				9777BE14273C74750042BA58 /* BearTrap.jpg */,
+				9777BE16273C7DEB0042BA58 /* Hole.jpg */,
 				9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */,
 				9728997D27078305006B6D26 /* Main.storyboard */,
 				9728998227078306006B6D26 /* LaunchScreen.storyboard */,
@@ -259,11 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9777BE17273C7DEB0042BA58 /* Hole.jpg in Resources */,
 				9777BE15273C74750042BA58 /* BearTrap.jpg in Resources */,
 				9728998427078306006B6D26 /* LaunchScreen.storyboard in Resources */,
 				9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */,
 				9728998127078306006B6D26 /* Assets.xcassets in Resources */,
-				97E90CE32710BCA30073094D /* puppies-cover.jpg in Resources */,
 				9728997F27078305006B6D26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
                        animations: {
                         if let viewToMove = self.customView {
                             var frame = viewToMove.frame;
-                            frame.origin.y = 400.0
+                            frame.origin.y = 10.0
                             viewToMove.frame = frame
                             viewToMove.alpha = 0.0
                             viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
