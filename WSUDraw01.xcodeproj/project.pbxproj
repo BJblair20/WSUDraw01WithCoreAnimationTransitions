@@ -15,6 +15,9 @@
 		9728998427078306006B6D26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9728998227078306006B6D26 /* LaunchScreen.storyboard */; };
 		9728998F27078306006B6D26 /* WSUDraw01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728998E27078306006B6D26 /* WSUDraw01Tests.swift */; };
 		9728999A27078306006B6D26 /* WSUDraw01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728999927078306006B6D26 /* WSUDraw01UITests.swift */; };
+		972899AA27078409006B6D26 /* WSUCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972899A927078409006B6D26 /* WSUCustomView.swift */; };
+		9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */; };
+		97E90CE32710BCA30073094D /* puppies-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E90CE22710BCA30073094D /* puppies-cover.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9728999527078306006B6D26 /* WSUDraw01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSUDraw01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9728999927078306006B6D26 /* WSUDraw01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSUDraw01UITests.swift; sourceTree = "<group>"; };
 		9728999B27078306006B6D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		972899A927078409006B6D26 /* WSUCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSUCustomView.swift; sourceTree = "<group>"; };
+		9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TreasureChest.jpg; sourceTree = "<group>"; };
+		97E90CE22710BCA30073094D /* puppies-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppies-cover.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +105,9 @@
 		9728997627078305006B6D26 /* WSUDraw01 */ = {
 			isa = PBXGroup;
 			children = (
-				9728997727078305006B6D26 /* AppDelegate.swift */,
-				9728997927078305006B6D26 /* SceneDelegate.swift */,
-				9728997B27078305006B6D26 /* ViewController.swift */,
-				9728997D27078305006B6D26 /* Main.storyboard */,
+				972899A7270783E3006B6D26 /* Controller */,
+				972899A8270783F2006B6D26 /* View */,
 				9728998027078306006B6D26 /* Assets.xcassets */,
-				9728998227078306006B6D26 /* LaunchScreen.storyboard */,
 				9728998527078306006B6D26 /* Info.plist */,
 			);
 			path = WSUDraw01;
@@ -126,6 +129,28 @@
 				9728999B27078306006B6D26 /* Info.plist */,
 			);
 			path = WSUDraw01UITests;
+			sourceTree = "<group>";
+		};
+		972899A7270783E3006B6D26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9728997727078305006B6D26 /* AppDelegate.swift */,
+				9728997927078305006B6D26 /* SceneDelegate.swift */,
+				9728997B27078305006B6D26 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		972899A8270783F2006B6D26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				97E90CE22710BCA30073094D /* puppies-cover.jpg */,
+				9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */,
+				9728997D27078305006B6D26 /* Main.storyboard */,
+				9728998227078306006B6D26 /* LaunchScreen.storyboard */,
+				972899A927078409006B6D26 /* WSUCustomView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9728998427078306006B6D26 /* LaunchScreen.storyboard in Resources */,
+				9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */,
 				9728998127078306006B6D26 /* Assets.xcassets in Resources */,
+				97E90CE32710BCA30073094D /* puppies-cover.jpg in Resources */,
 				9728997F27078305006B6D26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +288,7 @@
 				9728997C27078305006B6D26 /* ViewController.swift in Sources */,
 				9728997827078305006B6D26 /* AppDelegate.swift in Sources */,
 				9728997A27078305006B6D26 /* SceneDelegate.swift in Sources */,
+				972899AA27078409006B6D26 /* WSUCustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
