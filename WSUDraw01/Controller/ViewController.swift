@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                             viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
                         }
                        }, completion: { Bool in
-                            UIView.transition(from: self.customView!, to: self.imageView, duration: 0.5, options:[.transitionFlipFromLeft]) { Bool in
+                            UIView.transition(from: self.customView!, to: self.imageView, duration: 0.5, options:[.transitionCrossDissolve]) { Bool in
                                 if let viewToMove = self.customView {
                                     viewToMove.frame = self.originalFrame
                                     viewToMove.alpha = 1.0
@@ -40,10 +40,10 @@ class ViewController: UIViewController {
     
     @IBAction func flipBack() {
         if(nil != customView!.superview) {
-            UIView.transition(from: self.customView!, to:self.imageView , duration: 0.5, options:[.transitionFlipFromLeft]) { Bool in
+            UIView.transition(from: self.customView!, to:self.imageView , duration: 0.5, options:[.transitionCurlDown]) { Bool in
             }
         } else {
-            UIView.transition(from: self.imageView, to:self.customView! , duration: 0.5, options:[.transitionFlipFromLeft]) { Bool in
+            UIView.transition(from: self.imageView, to:self.customView! , duration: 0.5, options:[.transitionFlipFromBottom]) { Bool in
             }
         }
         

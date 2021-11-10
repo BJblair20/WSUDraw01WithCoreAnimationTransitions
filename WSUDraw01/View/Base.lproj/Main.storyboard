@@ -71,7 +71,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puppies-cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-7J-d44">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BearTrap.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-7J-d44">
                                 <rect key="frame" x="12" y="44" width="382" height="764"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -94,7 +94,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="puppies-cover.jpg" width="760" height="430"/>
+        <image name="BearTrap.jpg" width="512" height="384"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

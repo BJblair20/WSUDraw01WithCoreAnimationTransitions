@@ -17,6 +17,7 @@
 		9728999A27078306006B6D26 /* WSUDraw01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9728999927078306006B6D26 /* WSUDraw01UITests.swift */; };
 		972899AA27078409006B6D26 /* WSUCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972899A927078409006B6D26 /* WSUCustomView.swift */; };
 		9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */; };
+		9777BE15273C74750042BA58 /* BearTrap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9777BE14273C74750042BA58 /* BearTrap.jpg */; };
 		97E90CE32710BCA30073094D /* puppies-cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 97E90CE22710BCA30073094D /* puppies-cover.jpg */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		9728999B27078306006B6D26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		972899A927078409006B6D26 /* WSUCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSUCustomView.swift; sourceTree = "<group>"; };
 		9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TreasureChest.jpg; sourceTree = "<group>"; };
+		9777BE14273C74750042BA58 /* BearTrap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BearTrap.jpg; sourceTree = "<group>"; };
 		97E90CE22710BCA30073094D /* puppies-cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppies-cover.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				97E90CE22710BCA30073094D /* puppies-cover.jpg */,
+				9777BE14273C74750042BA58 /* BearTrap.jpg */,
 				9772C0A8273C713B00FFF6A0 /* TreasureChest.jpg */,
 				9728997D27078305006B6D26 /* Main.storyboard */,
 				9728998227078306006B6D26 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9777BE15273C74750042BA58 /* BearTrap.jpg in Resources */,
 				9728998427078306006B6D26 /* LaunchScreen.storyboard in Resources */,
 				9772C0A9273C713B00FFF6A0 /* TreasureChest.jpg in Resources */,
 				9728998127078306006B6D26 /* Assets.xcassets in Resources */,
