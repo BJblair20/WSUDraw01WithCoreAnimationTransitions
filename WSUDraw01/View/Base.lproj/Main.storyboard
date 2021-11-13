@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-NR-tx6">
-                                <rect key="frame" x="20" y="51" width="374" height="656"/>
+                                <rect key="frame" x="20" y="51" width="374" height="745"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3i-Wc-ea8" customClass="WSUCustomView" customModule="WSUDraw01" customModuleProvider="target">
@@ -27,7 +27,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfR-mF-CUV">
-                                        <rect key="frame" x="10" y="600" width="110" height="80"/>
+                                        <rect key="frame" x="2" y="600" width="110" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <state key="normal" title="TrapHole" image="Hole.jpg"/>
                                         <connections>
@@ -58,6 +58,14 @@
                                         <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vQ-r3-P0J">
+                                        <rect key="frame" x="130" y="681" width="111" height="77"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <state key="normal" title="TrapHole" image="Hole.jpg"/>
+                                        <connections>
+                                            <segue destination="g6A-Cw-GBU" kind="presentation" id="bZU-mh-bAl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.73479372409119059" blue="0.46404921116668907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -115,6 +123,9 @@
             <point key="canvasLocation" x="908.69565217391312" y="212.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pjv-Ch-LRx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BearTrap.jpg" width="512" height="384"/>
         <image name="Hole.jpg" width="146.8800048828125" height="97.919998168945312"/>

@@ -23,7 +23,7 @@ class ViewController: UIViewController {
                             var frame = viewToMove.frame;
                             frame.origin.y = 50.0
                             viewToMove.frame = frame
-                            viewToMove.alpha = 0.0
+                            viewToMove.alpha = 0.2
                             //viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
                         }
                        }, completion: { Bool in
