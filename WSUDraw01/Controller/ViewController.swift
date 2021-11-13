@@ -31,7 +31,8 @@ class ViewController: UIViewController {
                                 if let viewToMove = self.customView {
                                     viewToMove.frame = self.originalFrame
                                     viewToMove.alpha = 1.0
-                                    viewToMove.transform = CGAffineTransform(rotationAngle: 0.0)
+                                    //viewToMove.transform = CGAffineTransform(rotationAngle: 0.0)
+                                    //viewToMove.frame.origin.y = 50.0
                                 }
                         }
                        })
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
         } else {
             UIView.transition(from: self.imageView, to:self.customView! , duration: 0.5, options:[.transitionFlipFromBottom]) { Bool in
             }
+            viewDidLoad()
         }
         
     }
