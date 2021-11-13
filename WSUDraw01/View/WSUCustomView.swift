@@ -16,7 +16,7 @@ class WSUCustomView : UIView {
     var speed = CGFloat(1.0)
     
     func moveSmallRect() {
-        if(smallRect.maxY >= bounds.maxY || smallRect.minY < bounds.minY+60) {
+        if(smallRect.maxY >= bounds.maxY-30 || smallRect.minY < bounds.minY+60) {
             directionSign *= -1
         }
         smallRect.origin.y += speed * directionSign
