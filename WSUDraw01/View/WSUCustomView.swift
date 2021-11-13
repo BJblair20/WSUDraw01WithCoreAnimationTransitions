@@ -9,15 +9,15 @@ import UIKit
 
 class WSUCustomView : UIView {
     var clipPath : UIBezierPath?
-    var smallRect = CGRect(x: 0, y: 0, width: 200, height: 200)
+    var smallRect = CGRect(x: 0, y: 0, width: 20, height: 50)
     var directionSign = CGFloat(1.0)
     var speed = CGFloat(1.0)
     
     func moveSmallRect() {
-        if(smallRect.maxX >= bounds.maxX || smallRect.minX < bounds.minX) {
+        if(smallRect.maxY >= bounds.maxY || smallRect.minY < bounds.minY) {
             directionSign *= -1
         }
-        smallRect.origin.x += speed * directionSign
+        smallRect.origin.y += speed * directionSign
         setNeedsDisplay()
     }
     

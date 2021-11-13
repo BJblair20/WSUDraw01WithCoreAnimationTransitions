@@ -17,14 +17,14 @@ class ViewController: UIViewController {
         originalFrame = self.customView!.frame
         self.imageView.frame = originalFrame
         
-        UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse, .curveLinear],
+        UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse, .curveLinear,.repeat],
                        animations: {
                         if let viewToMove = self.customView {
                             var frame = viewToMove.frame;
-                            frame.origin.y = 10.0
+                            frame.origin.y = 50.0
                             viewToMove.frame = frame
                             viewToMove.alpha = 0.0
-                            viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
+                            //viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
                         }
                        }, completion: { Bool in
                             UIView.transition(from: self.customView!, to: self.imageView, duration: 0.5, options:[.transitionCrossDissolve]) { Bool in
