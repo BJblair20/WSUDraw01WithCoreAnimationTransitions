@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         originalFrame = self.customView!.frame
         self.imageView.frame = originalFrame
         
+        //animate S117's head movement
         UIView.animate(withDuration: 2.0, delay: 0.0, options: [.autoreverse, .curveLinear,.repeat],
                        animations: {
                         if let viewToMove = self.customView {
@@ -24,21 +25,22 @@ class ViewController: UIViewController {
                             frame.origin.y = 50.0
                             viewToMove.frame = frame
                             viewToMove.alpha = 0.2
-                            //viewToMove.transform = CGAffineTransform(rotationAngle: 90.0)
+                            
                         }
+                        //this code will never be reached because S117's animation repeats, but stuff acts weird if I remove it, so in it shall stay. 
                        }, completion: { Bool in
                             UIView.transition(from: self.customView!, to: self.imageView, duration: 0.5, options:[.transitionCrossDissolve]) { Bool in
                                 if let viewToMove = self.customView {
                                     viewToMove.frame = self.originalFrame
                                     viewToMove.alpha = 1.0
-                                    //viewToMove.transform = CGAffineTransform(rotationAngle: 0.0)
-                                    //viewToMove.frame.origin.y = 50.0
+                                    
                                 }
                         }
                        })
         
     }
     
+    //button controls to change scene views
     @IBAction func flipBack() {
         if(nil != customView!.superview) {
             UIView.transition(from: self.customView!, to:self.imageView , duration: 0.5, options:[.transitionCurlDown]) { Bool in
@@ -46,7 +48,7 @@ class ViewController: UIViewController {
         } else {
             UIView.transition(from: self.imageView, to:self.customView! , duration: 0.5, options:[.transitionFlipFromBottom]) { Bool in
             }
-            viewDidLoad()
+            viewDidLoad() //allows animation to continue after returning from second scene view
         }
         
     }

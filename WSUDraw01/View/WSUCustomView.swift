@@ -13,8 +13,9 @@ class WSUCustomView : UIView {
     var smallRect = CGRect(x: 50, y: 60, width: 20, height: 50)
     var smallRect2 = CGRect(x: 200, y: 60, width: 20, height: 50)
     var directionSign = CGFloat(1.0)
-    var speed = CGFloat(1.0)
+    var speed = CGFloat(0.8)
     
+    //move S117's eyes
     func moveSmallRect() {
         if(smallRect.maxY >= bounds.maxY-30 || smallRect.minY < bounds.minY+60) {
             directionSign *= -1
@@ -24,6 +25,7 @@ class WSUCustomView : UIView {
         setNeedsDisplay()
     }
     
+    //made two eyes caveman style. This fills in S117's head as well as creates his eyes.
     override func draw(_ rect: CGRect) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0/60.0) {
             self.moveSmallRect()
@@ -38,9 +40,5 @@ class WSUCustomView : UIView {
         path.fill()
         clipPath!.stroke()
         clipPath2!.stroke()
-    }
-    
-    @IBAction func takeSpeedFrom(slider : UISlider) {
-        speed = CGFloat(slider.value)
     }
 }
